@@ -11,7 +11,7 @@
 # Send-MailMessage -SmtpServer $SmtpServer -Port $SmtpPort -UseSsl -Credential (Get-Credential -UserName $SmtpUser -Password $SmtpPassword) -From $SmtpUser -To $Recipient -Subject $Subject -Body $Body
 
 # Configura los detalles del correo electrónico
-$SmtpServer = "smtp.example.com"
+$SmtpServer = "smtp.gmail.com"
 $SmtpPort = 587
 $SmtpUser = "usachris.10@gmail.com"
 $SmtpPassword = "plemquezbhekrxjy"
