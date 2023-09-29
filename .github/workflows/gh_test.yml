@@ -30,4 +30,9 @@ jobs:
       - name: Another script
         run: echo Hola al curso de integracion 2023-i
 
+      - name: Notify on success
+        if: success()
+        shell: powershell
+        run: .\enviarCorreo.ps1
+
 
