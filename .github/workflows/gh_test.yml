@@ -34,13 +34,13 @@ jobs:
       # - name: Check PowerShell version
       #   run: powershell -version
 
-      - name: Install PowerShell
-        run: |
-          choco install powershell
+      # - name: Install PowerShell
+      #   run: |
+      #     choco install powershell
 
       - name: Notify on success
         if: success()
         shell: powershell
-        run: ../enviarCorreo.ps1
+        run: .\enviarCorreo.ps1
 
 
