@@ -16,7 +16,8 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -29,6 +30,13 @@ jobs:
 
       - name: Another script
         run: echo Hola al curso de integracion 2023-i
+
+      - name: Check PowerShell version
+        run: powershell -version
+
+      - name: Install PowerShell
+        run: |
+          choco install powershell
 
       - name: Notify on success
         if: success()
