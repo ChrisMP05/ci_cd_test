@@ -33,6 +33,6 @@ jobs:
       - name: Notify on success
         if: success()
         shell: powershell
-        run: .\enviarCorreo.ps1
+        run: ../enviarCorreo.ps1
 
 
